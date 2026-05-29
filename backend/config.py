@@ -29,8 +29,8 @@ class TestingConfig(Config):
 class ProductionConfig(Config):
     """Production configuration"""
     DEBUG = False
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
-    
+    #SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:Nikki@123@localhost:5432/resume_analyzer'
 config = {
     'development': DevelopmentConfig,
     'testing': TestingConfig,

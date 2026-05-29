@@ -77,7 +77,7 @@ docker build -t resume-analyzer-frontend ./frontend
 2. **Environment variables**
    ```bash
    export FLASK_ENV=production
-   export DATABASE_URL=postgresql://user:pass@rds-endpoint:5432/resume_analyzer
+   export DATABASE_URL=postgresql://postgres:Nikki@123@rds-endpoint:5432/resume_analyzer
    ```
 
 3. **Run with Docker Compose**
